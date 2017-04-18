@@ -50,7 +50,6 @@ public class Level extends JPanel{
         int idx = 0;
 
         for(int i = 0; i < 360; i += 360 / nCols) {
-
             float h = i;
             float s = 90 + rand.nextFloat() * 10;
             float l = 50 + rand.nextFloat() * 10;
@@ -72,7 +71,8 @@ public class Level extends JPanel{
         // Fyld colorMap med de forskellige chars og deres farve
         colorMap = new HashMap<>();
 
-        Color[] colors = generateNColors(chars.size());
+        //Color[] colors = generateNColors(chars.size());
+        Color[] colors = ColorUtils.generateVisuallyDistinctColors(chars.size(), .9f, .1f);
 
         Iterator<Character> it = chars.iterator();
 
