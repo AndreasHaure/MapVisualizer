@@ -72,7 +72,7 @@ public class Level extends JPanel{
         colorMap = new HashMap<>();
 
         //Color[] colors = generateNColors(chars.size());
-        Color[] colors = ColorUtils.generateVisuallyDistinctColors(chars.size(), .9f, .1f);
+        Color[] colors = ColorUtils.generateVisuallyDistinctColors(chars.size(), .95f, 0.05f);
 
         Iterator<Character> it = chars.iterator();
 

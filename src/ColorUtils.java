@@ -6,7 +6,7 @@ public class ColorUtils {
     private final static float
             U_OFF = .436f,
             V_OFF = .615f;
-    private static final long RAND_SEED = 100;
+    private static final long RAND_SEED = 50;
     private static Random rand = new Random(RAND_SEED);
 
     /*
